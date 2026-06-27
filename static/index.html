@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpine Gear Co. — Store Knowledge Agent</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .chat-messages { scroll-behavior: smooth; }
+    .source-details[open] summary { margin-bottom: 0.5rem; }
+    .gap-bar { transition: width 0.4s ease; }
+  </style>
+</head>
+<body class="bg-gray-100 h-screen flex flex-col overflow-hidden">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white px-6 py-3 flex items-center justify-between shadow-md shrink-0">
+    <div class="flex items-center gap-3">
+      <span class="text-xl font-bold tracking-tight">Alpine Gear Co.</span>
+      <span class="text-gray-400 text-sm">|</span>
+      <span class="text-gray-300 text-sm">Store Knowledge Agent</span>
+    </div>
+    <div id="store-status" class="text-gray-400 text-sm">No store loaded</div>
+  </header>
+
+  <!-- Main two-panel layout -->
+  <main class="flex flex-1 overflow-hidden gap-0">
+
+    <!-- LEFT — Shopper Chat -->
+    <section class="flex flex-col w-1/2 bg-white border-r border-gray-200">
+      <div class="px-5 py-3 border-b border-gray-100 flex items-center justify-between bg-gray-50">
+        <h2 class="font-semibold text-gray-700 text-sm uppercase tracking-wide">Shopper Chat</h2>
+        <button
+          id="btn-load"
+          onclick="loadStore()"
+          class="px-3 py-1.5 bg-gray-900 text-white text-xs rounded-md hover:bg-gray-700 transition-colors"
+        >Load Store</button>
+      </div>
+
+      <!-- Quick question chips -->
+      <div class="px-4 py-2 flex flex-wrap gap-2 border-b border-gray-100 bg-gray-50">
+        <span class="text-xs text-gray-400 self-center mr-1">Try:</span>
+        <button onclick="askQuestion('Does the Alpine jacket run true to size?')" class="chip">Alpine jacket sizing?</button>
+        <button onclick="askQuestion('What is your return policy?')" class="chip">Return policy?</button>
+        <button onclick="askQuestion('Do you ship to Canada?')" class="chip">Ship to Canada?</button>
+        <button onclick="askQuestion('Is the protein powder safe during pregnancy?')" class="chip">Protein &amp; pregnancy?</button>
+        <button onclick="askQuestion('Can I return a jacket I bought 6 weeks ago?')" class="chip">Return after 6 weeks?</button>
+        <button onclick="askQuestion('What materials are used in the Summit backpack?')" class="chip">Summit backpack materials?</button>
+      </div>
+
+      <!-- Chat messages -->
+      <div id="chat-messages" class="flex-1 overflow-y-auto px-4 py-4 space-y-4 chat-messages">
+        <div class="text-center text-gray-400 text-sm mt-8" id="empty-chat">
+          Load the store, then ask a question to get started.
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="px-4 py-3 border-t border-gray-200 flex gap-2">
+        <input
+          id="chat-input"
+          type="text"
+          placeholder="Ask a question about our products…"
+          class="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400"
+          onkeydown="if(event.key==='Enter') sendMessage()"
+        />
+        <button
+          onclick="sendMessage()"
+          class="px-4 py-2 bg-gray-900 text-white text-sm rounded-lg hover:bg-gray-700 transition-colors"
+        >Send</button>
+      </div>
+    </section>
+
+    <!-- RIGHT — Missing Intelligence Dashboard -->
+    <section class="flex flex-col w-1/2 bg-amber-50">
+      <div class="px-5 py-3 border-b border-amber-200 flex items-center justify-between bg-amber-100">
+        <div class="flex items-center gap-2">
+          <h2 class="font-semibold text-amber-900 text-sm uppercase tracking-wide">Missing Intelligence</h2>
+          <span id="missing-count-badge" class="hidden bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">0</span>
+        </div>
+        <button
+          onclick="clusterGaps()"
+          id="btn-cluster"
+          class="px-3 py-1.5 bg-amber-700 text-white text-xs rounded-md hover:bg-amber-800 transition-colors disabled:opacity-50"
+        >Cluster Gaps</button>
+      </div>
+
+      <div id="missing-panel" class="flex-1 overflow-y-auto px-4 py-4">
+        <div id="empty-missing" class="text-center text-amber-700/60 text-sm mt-12 px-4">
+          No gaps yet — start chatting to surface what the store doesn't know.
+        </div>
+        <div id="missing-list" class="space-y-2"></div>
+        <div id="cluster-list" class="space-y-4 mt-2"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Tailwind chip style via inline class (defined via style tag since CDN can't purge) -->
+  <style>
+    .chip {
+      @apply px-2.5 py-1 bg-white border border-gray-200 text-gray-600 text-xs rounded-full hover:bg-gray-100 hover:border-gray-300 cursor-pointer transition-colors;
+    }
+  </style>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

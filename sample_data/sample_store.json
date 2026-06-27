@@ -1,0 +1,288 @@
+{
+  "store_id": "alpine-gear-co",
+  "store_name": "Alpine Gear Co.",
+  "products": [
+    {
+      "product_id": "prod-001",
+      "name": "Alpine Shell Jacket",
+      "description": "A technical hardshell jacket designed for demanding mountain conditions. Features a 3-layer construction with sealed seams and an adjustable hood. Ideal for alpine climbing, ski touring, and winter hiking. Fits true to size — we recommend sizing up if you plan to layer heavily underneath.",
+      "price": 289.00,
+      "category": "jackets",
+      "tags": ["hardshell", "alpine", "winter", "climbing", "ski", "vegan"],
+      "materials": ["75D polyester face", "polyurethane membrane", "mesh lining"],
+      "care_instructions": "Machine wash cold on gentle cycle. Do not bleach. Tumble dry low. Do not iron.",
+      "variants": [
+        {"size": "S",  "color": "Slate Blue",  "sku": "ASJ-S-BLU",  "in_stock": true},
+        {"size": "M",  "color": "Slate Blue",  "sku": "ASJ-M-BLU",  "in_stock": true},
+        {"size": "L",  "color": "Slate Blue",  "sku": "ASJ-L-BLU",  "in_stock": false},
+        {"size": "XL", "color": "Slate Blue",  "sku": "ASJ-XL-BLU", "in_stock": true},
+        {"size": "S",  "color": "Charcoal",    "sku": "ASJ-S-CHR",  "in_stock": true},
+        {"size": "M",  "color": "Charcoal",    "sku": "ASJ-M-CHR",  "in_stock": true},
+        {"size": "L",  "color": "Charcoal",    "sku": "ASJ-L-CHR",  "in_stock": true},
+        {"size": "XL", "color": "Charcoal",    "sku": "ASJ-XL-CHR", "in_stock": true}
+      ]
+    },
+    {
+      "product_id": "prod-002",
+      "name": "Summit Puffer Jacket",
+      "description": "A lightweight down-insulated jacket perfect for cold weather layering. Filled with 650-fill-power duck down and packable into its own chest pocket. Great for camping, travel, and everyday cold weather wear. Fits slightly slim — size up for a relaxed fit.",
+      "price": 179.00,
+      "category": "jackets",
+      "tags": ["puffer", "insulated", "down", "packable", "winter", "layering"],
+      "materials": ["100% nylon shell", "650-fill-power duck down", "100% polyester lining"],
+      "care_instructions": "Machine wash warm. Tumble dry on medium with two clean tennis balls to re-loft the down.",
+      "variants": [
+        {"size": "S",  "color": "Forest Green", "sku": "SPJ-S-GRN",  "in_stock": true},
+        {"size": "M",  "color": "Forest Green", "sku": "SPJ-M-GRN",  "in_stock": true},
+        {"size": "L",  "color": "Forest Green", "sku": "SPJ-L-GRN",  "in_stock": true},
+        {"size": "XL", "color": "Forest Green", "sku": "SPJ-XL-GRN", "in_stock": false},
+        {"size": "S",  "color": "Burnt Orange", "sku": "SPJ-S-ORG",  "in_stock": true},
+        {"size": "M",  "color": "Burnt Orange", "sku": "SPJ-M-ORG",  "in_stock": true},
+        {"size": "L",  "color": "Burnt Orange", "sku": "SPJ-L-ORG",  "in_stock": true},
+        {"size": "XL", "color": "Burnt Orange", "sku": "SPJ-XL-ORG", "in_stock": true}
+      ]
+    },
+    {
+      "product_id": "prod-003",
+      "name": "Trail Windbreaker",
+      "description": "An ultralight wind and water-resistant jacket for trail running and fast hiking. Weighs just 120g and packs into a small stuff sack. DWR coating repels light rain. True to size.",
+      "price": 129.00,
+      "category": "jackets",
+      "tags": ["windbreaker", "ultralight", "trail running", "DWR", "packable", "running", "vegan"],
+      "materials": ["20D ripstop nylon", "DWR coating", "no lining"],
+      "care_instructions": "Hand wash or machine wash cold. Air dry. Re-apply DWR spray after 10-15 washes.",
+      "variants": [
+        {"size": "S",  "color": "Neon Yellow", "sku": "TWB-S-NEO",  "in_stock": true},
+        {"size": "M",  "color": "Neon Yellow", "sku": "TWB-M-NEO",  "in_stock": true},
+        {"size": "L",  "color": "Neon Yellow", "sku": "TWB-L-NEO",  "in_stock": true},
+        {"size": "XL", "color": "Neon Yellow", "sku": "TWB-XL-NEO", "in_stock": true},
+        {"size": "S",  "color": "Storm Grey",  "sku": "TWB-S-GRY",  "in_stock": true},
+        {"size": "M",  "color": "Storm Grey",  "sku": "TWB-M-GRY",  "in_stock": false},
+        {"size": "L",  "color": "Storm Grey",  "sku": "TWB-L-GRY",  "in_stock": true},
+        {"size": "XL", "color": "Storm Grey",  "sku": "TWB-XL-GRY", "in_stock": true}
+      ]
+    },
+    {
+      "product_id": "prod-004",
+      "name": "Summit 30L Backpack",
+      "description": "A versatile 30-liter daypack built for technical hikes and multi-sport adventures. Features a padded laptop sleeve (fits up to 15 inches), hip belt pockets, trekking pole attachment, and a hydration sleeve. Adjustable torso length fits a wide range of body types.",
+      "price": 159.00,
+      "category": "backpacks",
+      "tags": ["backpack", "30L", "hiking", "laptop sleeve", "hydration compatible", "daypack", "vegan"],
+      "materials": ["210D nylon ripstop", "1000D nylon base", "aluminum frame stays", "foam padding"],
+      "care_instructions": "Spot clean with mild soap and water. Air dry only. Do not machine wash.",
+      "variants": [
+        {"size": "One Size", "color": "Midnight Navy", "sku": "S30-OS-NVY", "in_stock": true},
+        {"size": "One Size", "color": "Cinder Red",    "sku": "S30-OS-RED", "in_stock": true}
+      ]
+    },
+    {
+      "product_id": "prod-005",
+      "name": "Day Hike 20L Backpack",
+      "description": "A lightweight 20-liter daypack for casual hikes and outdoor day trips. Simple organization with a main compartment, front pocket, and two water bottle side pockets. Padded back panel and adjustable shoulder straps.",
+      "price": 89.00,
+      "category": "backpacks",
+      "tags": ["backpack", "20L", "hiking", "lightweight", "daypack", "vegan"],
+      "materials": ["150D polyester", "foam padding", "mesh back panel"],
+      "care_instructions": "Spot clean with mild soap and water. Air dry only.",
+      "variants": [
+        {"size": "One Size", "color": "Pine Green",  "sku": "DH20-OS-GRN", "in_stock": true},
+        {"size": "One Size", "color": "Sand Tan",    "sku": "DH20-OS-TAN", "in_stock": true},
+        {"size": "One Size", "color": "Cobalt Blue", "sku": "DH20-OS-BLU", "in_stock": false}
+      ]
+    },
+    {
+      "product_id": "prod-006",
+      "name": "Urban Commuter Backpack",
+      "description": "A clean, minimal backpack designed for urban commuters and everyday carry. 25-liter capacity with a dedicated padded laptop compartment (fits up to 16 inches), key clip, water bottle pocket, and hidden rear pocket. Professional enough for the office.",
+      "price": 119.00,
+      "category": "backpacks",
+      "tags": ["backpack", "commuter", "laptop sleeve", "urban", "everyday carry", "office", "vegan"],
+      "materials": ["600D polyester", "YKK zippers", "foam padding"],
+      "care_instructions": "Spot clean only. Do not machine wash or submerge.",
+      "variants": [
+        {"size": "One Size", "color": "Charcoal Black", "sku": "UCB-OS-BLK", "in_stock": true},
+        {"size": "One Size", "color": "Olive Drab",     "sku": "UCB-OS-OLV", "in_stock": true}
+      ]
+    },
+    {
+      "product_id": "prod-007",
+      "name": "Insulated Water Bottle 32oz",
+      "description": "A double-wall vacuum insulated stainless steel bottle that keeps beverages cold for 24 hours and hot for 12 hours. Wide mouth opening, leak-proof lid, and powder-coated exterior. BPA-free.",
+      "price": 39.00,
+      "category": "water bottles",
+      "tags": ["water bottle", "insulated", "stainless steel", "BPA-free", "32oz", "hydration", "vegan"],
+      "materials": ["18/8 stainless steel", "powder coat exterior", "BPA-free plastic lid"],
+      "care_instructions": "Hand wash recommended. Lid is dishwasher safe.",
+      "variants": [
+        {"size": "32oz", "color": "Alpine White",   "sku": "IWB32-WHT", "in_stock": true},
+        {"size": "32oz", "color": "Midnight Black", "sku": "IWB32-BLK", "in_stock": true},
+        {"size": "32oz", "color": "Terracotta",     "sku": "IWB32-TER", "in_stock": true}
+      ]
+    },
+    {
+      "product_id": "prod-008",
+      "name": "Lightweight Trail Bottle 24oz",
+      "description": "A single-wall stainless steel bottle for ultralight hikers and trail runners. Weighs just 100g empty. Wide mouth, simple screw-top lid, and loop clip. Not insulated — optimized for minimum weight.",
+      "price": 24.00,
+      "category": "water bottles",
+      "tags": ["water bottle", "lightweight", "ultralight", "trail running", "stainless steel", "24oz", "vegan"],
+      "materials": ["single-wall stainless steel"],
+      "care_instructions": "Hand wash with mild soap. Dishwasher safe.",
+      "variants": [
+        {"size": "24oz", "color": "Raw Steel",    "sku": "LTB24-STL", "in_stock": true},
+        {"size": "24oz", "color": "Glacier Blue", "sku": "LTB24-BLU", "in_stock": true}
+      ]
+    },
+    {
+      "product_id": "prod-009",
+      "name": "Alpine Electrolyte Mix",
+      "description": "A clean electrolyte powder with sodium, potassium, magnesium, and calcium. No added sugar, artificial flavors, or dyes. Mix one packet with 16oz of water. 30 packets per box. Lemon-lime flavor. Vegan and gluten-free certified.",
+      "price": 34.00,
+      "category": "supplements",
+      "tags": ["electrolytes", "hydration", "supplement", "no sugar", "vegan", "gluten-free", "lemon-lime"],
+      "materials": [],
+      "care_instructions": null,
+      "variants": [
+        {"size": "30 packets", "color": null, "sku": "AEM-30P", "in_stock": true}
+      ]
+    },
+    {
+      "product_id": "prod-010",
+      "name": "Plant Protein Powder",
+      "description": "A vegan protein powder made from pea and brown rice protein. 22g of protein per serving, no artificial sweeteners. Available in chocolate and vanilla. 30 servings per bag. Gluten-free certified. Produced in a facility that processes other ingredients.",
+      "price": 54.00,
+      "category": "supplements",
+      "tags": ["protein", "vegan", "plant-based", "supplement", "gluten-free", "pea protein", "chocolate", "vanilla"],
+      "materials": [],
+      "care_instructions": null,
+      "variants": [
+        {"size": "30 servings", "color": null, "sku": "PPP-30S-CHO", "in_stock": true},
+        {"size": "30 servings", "color": null, "sku": "PPP-30S-VAN", "in_stock": true}
+      ]
+    },
+    {
+      "product_id": "prod-011",
+      "name": "Merino Wool Neck Buff",
+      "description": "A versatile merino wool neck gaiter and headband. Naturally odor-resistant, moisture-wicking, and temperature-regulating. Can be worn as a buff, beanie, or face covering. Machine washable.",
+      "price": 28.00,
+      "category": "accessories",
+      "tags": ["merino", "wool", "neck gaiter", "buff", "headband", "odor-resistant"],
+      "materials": ["100% merino wool"],
+      "care_instructions": "Machine wash cold on delicate cycle. Lay flat to dry.",
+      "variants": [
+        {"size": "One Size", "color": "Natural Grey", "sku": "MWB-OS-GRY", "in_stock": true},
+        {"size": "One Size", "color": "Deep Navy",    "sku": "MWB-OS-NVY", "in_stock": true},
+        {"size": "One Size", "color": "Russet Brown", "sku": "MWB-OS-RST", "in_stock": false}
+      ]
+    },
+    {
+      "product_id": "prod-012",
+      "name": "Carbon Trekking Poles",
+      "description": "Lightweight carbon fiber trekking poles with cork grips, adjustable length (100–135cm), and quick-lock mechanisms. Includes interchangeable baskets for trail and snow use. Folds into three sections for compact transport.",
+      "price": 119.00,
+      "category": "accessories",
+      "tags": ["trekking poles", "carbon fiber", "hiking", "adjustable", "lightweight", "cork grip", "vegan"],
+      "materials": ["carbon fiber shafts", "cork grip handles", "carbide tips", "aluminum quick-locks"],
+      "care_instructions": "Wipe down after use. Store collapsed and dry.",
+      "variants": [
+        {"size": "One Size (adjustable 100-135cm)", "color": "Carbon Black", "sku": "CTP-OS-BLK", "in_stock": true},
+        {"size": "One Size (adjustable 100-135cm)", "color": "Trail Red",    "sku": "CTP-OS-RED", "in_stock": true}
+      ]
+    }
+  ],
+  "policies": [
+    {
+      "policy_id": "pol-returns",
+      "category": "returns",
+      "title": "Return Policy",
+      "content": "We accept returns within 30 days of purchase. Items must be in original, unworn condition with all original tags attached. Proof of purchase (original receipt or order confirmation email) is required for all returns. To start a return, visit our returns portal at alpinegearco.com/returns or contact support@alpinegearco.com. Once we receive and inspect the item, refunds are processed within 5-7 business days to your original payment method. Exchanges for a different size or color are handled as a return and new purchase. Note: Opened or used supplement products (including protein powder and electrolyte mixes) are not eligible for return due to health and safety reasons. Clearance and final sale items are non-returnable. Items returned after 30 days will not be accepted."
+    },
+    {
+      "policy_id": "pol-shipping",
+      "category": "shipping",
+      "title": "Shipping Policy",
+      "content": "We offer free standard shipping on all US orders over $75. Standard shipping within the United States takes 5-7 business days. Expedited 2-day shipping is available for an additional fee at checkout. We ship internationally to select destinations including all EU member countries. International orders to the EU typically arrive in 10-14 business days and may be subject to local customs duties and taxes, which are the responsibility of the recipient. At this time, we do not ship to Canada or other destinations not listed at checkout. Shipping rates for international orders are calculated at checkout based on destination and order weight."
+    },
+    {
+      "policy_id": "pol-warranty",
+      "category": "warranty",
+      "title": "Warranty Policy",
+      "content": "Alpine Gear Co. stands behind the quality of our products. Hardware items — including trekking poles and water bottles — are covered by a lifetime warranty against manufacturing defects. Apparel and soft goods — including jackets, backpacks, and accessories — are covered by a 1-year warranty from the date of purchase against manufacturing defects in materials and workmanship. Supplement products are not covered under warranty but are subject to our return policy. Warranty claims do not cover damage from normal wear and tear, misuse, accidents, or unauthorized modifications. To file a warranty claim, contact support@alpinegearco.com with your order number and photos of the defect."
+    }
+  ],
+  "faqs": [
+    {
+      "faq_id": "faq-001",
+      "question": "How do I wash the jacket?",
+      "answer": "For the Alpine Shell and Trail Windbreaker, machine wash cold on a gentle cycle and tumble dry low. For the Summit Puffer, machine wash warm and tumble dry on medium with two clean tennis balls to re-loft the down insulation. Always check the care label on your specific jacket. Avoid fabric softeners as they can damage DWR coatings.",
+      "tags": ["washing", "care", "jacket", "maintenance"]
+    },
+    {
+      "faq_id": "faq-002",
+      "question": "What does the warranty cover?",
+      "answer": "Our lifetime warranty covers hardware items (trekking poles and water bottles) against manufacturing defects. Apparel and soft goods (jackets, backpacks, accessories) are covered for 1 year from purchase against manufacturing defects. Warranty does not cover normal wear and tear, misuse, or accidental damage. To file a claim, email support@alpinegearco.com with your order number and photos.",
+      "tags": ["warranty", "coverage", "defects"]
+    },
+    {
+      "faq_id": "faq-003",
+      "question": "How do I track my order?",
+      "answer": "Once your order ships, you'll receive a shipping confirmation email with a tracking number. Use this number on the carrier's website (UPS or USPS) to follow your package. If you haven't received a tracking email within 2 business days of ordering, check your spam folder or contact support@alpinegearco.com.",
+      "tags": ["tracking", "order", "shipping", "delivery"]
+    },
+    {
+      "faq_id": "faq-004",
+      "question": "Can I exchange for a different size?",
+      "answer": "Yes — we handle size exchanges as a return and new purchase. Return your item within 30 days in original condition. Once we receive it, place a new order for your preferred size. If the price differs between items, you'll pay or receive the difference. Contact support@alpinegearco.com to start the process.",
+      "tags": ["exchange", "size", "return"]
+    },
+    {
+      "faq_id": "faq-005",
+      "question": "Are your products vegan?",
+      "answer": "Several products are vegan-friendly: all jackets except the Summit Puffer, all backpacks, both water bottles, both supplements, and the trekking poles. The Summit Puffer Jacket contains duck down and is not vegan. The Merino Wool Neck Buff contains wool and is not vegan.",
+      "tags": ["vegan", "materials", "animal-free", "sustainability"]
+    },
+    {
+      "faq_id": "faq-006",
+      "question": "Do you offer wholesale or bulk pricing?",
+      "answer": "We don't currently have a formal wholesale program. If you represent a guide service, outdoor organization, or non-profit, reach out to support@alpinegearco.com to discuss potential group pricing — we review these on a case-by-case basis.",
+      "tags": ["wholesale", "bulk", "pricing", "business"]
+    },
+    {
+      "faq_id": "faq-007",
+      "question": "How do I adjust the straps on my backpack?",
+      "answer": "Load your pack first, then put it on. Tighten the shoulder straps from the bottom up until the pack sits snugly against your back. Clip and adjust the sternum strap at chest height for stability. For the Summit 30L, tighten the hip belt to transfer weight to your hips. The load lifter straps at the top of the shoulder straps should pull the top of the pack toward you.",
+      "tags": ["backpack", "straps", "fit", "adjustment"]
+    },
+    {
+      "faq_id": "faq-008",
+      "question": "How do I return something online?",
+      "answer": "Visit our returns portal at alpinegearco.com/returns. Enter your order number and email address, select the item(s) to return and the reason. Print the prepaid shipping label (US orders only — international customers arrange their own return shipping). Pack the item securely, attach the label, and drop it off at any UPS location. Refunds are processed within 5-7 business days of receiving the item.",
+      "tags": ["return", "online", "process", "label"]
+    },
+    {
+      "faq_id": "faq-009",
+      "question": "Do you have a loyalty or rewards program?",
+      "answer": "We don't currently have a formal loyalty or rewards program. We occasionally offer exclusive discounts to our email subscribers — sign up at the bottom of our website to be first to hear about promotions and new releases.",
+      "tags": ["loyalty", "rewards", "points", "discount"]
+    },
+    {
+      "faq_id": "faq-010",
+      "question": "Do you ship internationally?",
+      "answer": "Yes — we ship to select international destinations including all EU member countries. EU orders typically arrive in 10-14 business days. International orders may be subject to local customs duties and taxes paid by the customer. Note: we do not currently ship to Canada. Check at checkout to confirm availability for your country.",
+      "tags": ["international", "shipping", "EU", "global"]
+    },
+    {
+      "faq_id": "faq-011",
+      "question": "Is the protein powder gluten-free?",
+      "answer": "Yes — our Plant Protein Powder is certified gluten-free and vegan. The Electrolyte Mix is also gluten-free. Both are produced in a facility that handles other ingredients, so if you have severe celiac disease, please consult your doctor before use.",
+      "tags": ["gluten-free", "protein", "supplement", "celiac", "dietary"]
+    },
+    {
+      "faq_id": "faq-012",
+      "question": "How do I contact customer support?",
+      "answer": "Email us at support@alpinegearco.com. We typically respond within 1-2 business days. Include your order number in the subject line for faster service. We don't currently offer phone or live chat support.",
+      "tags": ["contact", "support", "email", "help"]
+    }
+  ]
+}

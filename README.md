@@ -1,49 +1,45 @@
 # Store Knowledge Agent
 
-Most store chatbots just answer questions. This one also tracks the questions it *couldn't* answer — and tells the merchant what to fix.
-
-It's a two-panel demo: a shopper chat on the left, and a live "Missing Intelligence" dashboard on the right. Every time the agent gives a low-confidence answer, it shows up on the right with a timestamp and confidence score. Hit "Cluster Gaps" and it groups them into themes with plain-English recommendations.
+Most store chatbots answer questions. This one also tracks the ones it *couldn't* answer — and tells the merchant what to fix.
 
 ![Overview](static/screenshots/overview.png)
 
-The sample store is a fictional outdoor gear brand (Alpine Gear Co.) with products, a return policy, FAQs, and a few intentional blind spots — Canada shipping, supplement safety during pregnancy, returns past 30 days. Those are the ones that surface as gaps.
+**Left panel** — a shopper asks questions, gets answers with a confidence score on every response.  
+**Right panel** — every low-confidence answer is logged instantly. Hit "Cluster Gaps" and the system groups them into themes with content recommendations.
+
+The sample store is a fictional outdoor gear brand. It has products, policies, and FAQs — but also a few deliberate blind spots. Those are what surface on the right.
 
 ---
 
-## Getting started
+## What the examples show
 
-You'll need a free [OpenRouter](https://openrouter.ai/keys) API key. It uses free models — no credit card needed.
+| Question | Confidence | What happens |
+|----------|-----------|--------------|
+| "What's your return policy?" | 48% | Policy retrieved, answer generated — but similarity is borderline, flagged as a gap |
+| "Do you ship to Canada?" | 61% ✓ | Policy explicitly says no Canada — clean direct answer |
+| "Is the protein powder safe during pregnancy?" | 39% ⚠ | No relevant content exists anywhere in the store — logged as a gap immediately |
+| "Can I return a jacket bought 6 weeks ago?" | ~45% ⚠ | Policy covers 30 days, agent hedges on the edge case — flagged |
+
+After a few questions, click **Cluster Gaps** → the three flagged questions group into themes ("Supplement Safety", "Return Edge Cases") with a one-line recommendation each.
+
+That's the point: every unanswered question becomes a structured merchant insight, not just a silent bounce.
+
+---
+
+## Run it
+
+Needs a free [OpenRouter](https://openrouter.ai/keys) API key (no credit card).
 
 ```bash
 git clone https://github.com/Sumanth0601/store-knowledge-agent
 cd store-knowledge-agent
-
 pip install -r requirements.txt
-
-cp .env.example .env
-# Add your OpenRouter API key to .env
-
+cp .env.example .env  # add your key
 uvicorn main:app --reload
-# Open http://localhost:8000
 ```
 
-Click **Load Store**, then start asking questions.
+Open `http://localhost:8000`, click **Load Store**, start asking.
 
----
-
-## Try these questions
-
-These are designed to show the full range of the system:
-
-| Question | What happens |
-|----------|-------------|
-| "Does the Alpine jacket run true to size?" | Answered from product info |
-| "What's your return policy?" | Full policy retrieved and summarised |
-| "Do you ship to Canada?" | Answered — policy explicitly says no |
-| "Is the protein powder safe during pregnancy?" | No info exists → flagged as gap immediately |
-| "Can I return a jacket I bought 6 weeks ago?" | Agent hedges → low confidence → flagged |
-
-After asking a few, click **Cluster Gaps** on the right to group the unanswered questions and get recommendations.
 
 - **Canada shipping** — policy explicitly states no Canada shipping but no FAQ entry exists
 - **Supplement safety during pregnancy** — no medical guidance exists in the knowledge base

@@ -24,8 +24,8 @@ The left panel shows responses with confidence badges (yellow = partial match, r
 ## How to run
 
 ```bash
-git clone <repo>
-cd rep-ai
+git clone https://github.com/Sumanth0601/store-knowledge-agent
+cd store-knowledge-agent
 
 pip install -r requirements.txt
 
@@ -75,7 +75,7 @@ When the top FAQ cosine similarity exceeds 0.85, the stored answer is returned d
 ## Project structure
 
 ```
-rep-ai/
+store-knowledge-agent/
 ├── main.py                     # FastAPI app, all routes
 ├── ingest/
 │   └── store_ingest.py         # Parse store JSON, build ChromaDB collections
